@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="icon" type="image/ico" href="/favicon.ico">
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body onload="allClear">
+        <h1>Luke's Simple Calculator</h1>
+        <div class="grid-container">
+            <div class="item1">
+                <div class="display" id="display">
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="buttonOpenP" onclick="clickButton('\(')">(</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="buttoncloseP" onclick="clickButton('\)')">)</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="buttonPercent" onclick="clickButton('%')">%</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="buttonAC" onclick="allClear()">AC</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="button7" onclick="clickButton(7)">7</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="button8" onclick="clickButton(8)">8</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="button9" onclick="clickButton(9)">9</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="buttonDev" onclick="clickButton('/')">÷</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="button4" onclick="clickButton(4)">4</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="button5" onclick="clickButton(5)">5</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="button6" onclick="clickButton(6)">6</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="buttonMult" onclick="clickButton('*')">x</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="button1" onclick="clickButton(1)">1</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="button2" onclick="clickButton(2)">2</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="button3" onclick="clickButton(3)">3</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="buttonMinus" onclick="clickButton('-')">-</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="button0" onclick="clickButton(0)">0</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="buttonDot" onclick="clickButton('.')">.</button>
+            </div>
+
+            <div class="grid-item">
+                <button type="button" id="buttonEq" onclick="equals()">=</button>
+            </div>
+            <div class="grid-item">
+                <button type="button" id="buttonPlus" onclick="clickButton('+')">+</button>
+            </div>
+        </div>
+    </body>
+</html>
